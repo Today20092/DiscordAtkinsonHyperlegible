@@ -1,0 +1,25 @@
+/**
+ * @name Hyperlegible Font
+ * @version 1.0.0
+ * @author ayoubab1
+ * @description Changes the default font to Atkion Hyperlegible, an easy to read font.
+*/
+
+/* Imports */
+@import url("https://thecommieaxolotl.github.io/BetterDiscord-Stuff/Imports/Touchup.css");
+@import url("https://thecommieaxolotl.github.io/BetterDiscord-Stuff/Imports/UserBadges.css");
+@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+:root,
+.font {
+  --font: "Atkinson Hyperlegible";
+}
+
+::placeholder,
+body,
+button,
+input,
+select,
+textarea {
+  font-family: var(--font);
+}

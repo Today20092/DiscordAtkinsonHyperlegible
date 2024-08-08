@@ -11,10 +11,9 @@ Atkinson Hyperlegible font is named after Braille Institute founder, J. Robert A
 
 #### How to install?
 
-Place on a single line under "Online Themes"
+Copy and place link below on a single line under "Online Themes"
 
 Vencord: `https://raw.githubusercontent.com/Today20092/DiscordAtkinsonHyperlegible/main/HyperLegibleFont.theme.css`
-
 
 
 

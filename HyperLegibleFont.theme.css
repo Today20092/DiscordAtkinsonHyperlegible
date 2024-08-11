@@ -14,17 +14,16 @@
 /* Imports */
 @import url(https://fonts.bunny.net/css?family=atkinson-hyperlegible:400,400i,700,700i);
 
-:root,
-.font {
-  --font: "Atkinson Hyperlegible";
+:root {
+  --font: "Atkinson Hyperlegible", sans-serif; 
 }
 
-::placeholder,
-body,
-button,
-input,
-select,
-textarea {
+/* Apply font to all elements */
+* {
+  font-family: var(--font) !important; /* Force the custom font */
+}
+
+/* Ensure placeholder text uses the font */
+::placeholder {
   font-family: var(--font);
 }
-

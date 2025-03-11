@@ -12,10 +12,11 @@
  */
 
 /* Imports */
-@import url(https://fonts.bunny.net/css?family=atkinson-hyperlegible:400,400i,700,700i);
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&display=swap');
+
 
 :root {
-  --font: "Atkinson Hyperlegible", sans-serif; 
+  --font: "Atkinson Hyperlegible Next", sans-serif; 
 }
 
 /* Apply font to all elements */

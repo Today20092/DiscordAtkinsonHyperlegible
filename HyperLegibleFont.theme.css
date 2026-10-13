@@ -1,9 +1,8 @@
 /**
- * @name Atkinson Hyperlegible Font
+ * @name Atkinson Hyperlegible Next
  * @author Ayoub Abedrabbo
- * @description Replaces discord's font with an easier to read font: Atkinson Hyperlegible.
- * @version 0.0.1
- * @authorId ayoubab1
+ * @description Uses Atkinson Hyperlegible Next for Discord text and headings while preserving monospace code.
+ * @version 0.0.2
  * @authorLink https://betterdiscord.app/developer/ayoubab1
  * @donate https://ko-fi.com/ayoubab1
  * @patreon http://patreon.com/AyoubAbedrabbo
@@ -11,20 +10,9 @@
  * @source https://github.com/Today20092/DiscordAtkinsonHyperlegible
  */
 
-/* Imports */
 @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&display=swap');
 
-
 :root {
-  --font: "Atkinson Hyperlegible Next", sans-serif; 
-}
-
-/* Apply font to all elements */
-* {
-  font-family: var(--font) !important; /* Force the custom font */
-}
-
-/* Ensure placeholder text uses the font */
-::placeholder {
-  font-family: var(--font);
+  --font-primary: "Atkinson Hyperlegible Next", "gg sans", "Noto Sans", sans-serif;
+  --font-display: "Atkinson Hyperlegible Next", "gg sans", "Noto Sans", sans-serif;
 }

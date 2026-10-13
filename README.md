@@ -2,7 +2,7 @@
 
 A Vencord font theme using [Atkinson Hyperlegible Next](https://fonts.google.com/specimen/Atkinson+Hyperlegible+Next), designed for readability by the [Braille Institute](https://www.brailleinstitute.org/freefont/).
 
-The theme sets Discord's `--font-primary` and `--font-display` variables. Code keeps Discord's monospace font. Regular and italic styles load from Google Fonts with weights 200 through 800; no system font installation or Vencord plugin is required.
+The theme sets Discord's `--font-primary` and `--font-display` variables to Atkinson Hyperlegible Next, and `--font-code` to [Atkinson Hyperlegible Mono](https://fonts.google.com/specimen/Atkinson+Hyperlegible+Mono) for inline code and code blocks. Both families load regular and italic styles from Google Fonts with weights 200 through 800; no system font installation or Vencord plugin is required.
 
 ## Install in Vencord
 

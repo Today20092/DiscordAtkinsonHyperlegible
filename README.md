@@ -34,6 +34,35 @@ In Vencord's browser extension, use **Upload Theme** in Local Themes instead of 
 
 Open **Edit QuickCSS**, paste the contents of the theme file, and enable **Enable Custom CSS** in Vencord settings. Keep the `@import` before all ordinary CSS rules, including any rules already in your QuickCSS file.
 
+## Font sources and privacy
+
+Google Fonts is the default for convenient installation. You can use Bunny Fonts or installed fonts instead. Choose one provider; adding several imports makes requests to several services rather than providing a reliable fallback.
+
+### Bunny Fonts
+
+[Bunny Fonts](https://fonts.bunny.net/about/) offers both Next and Mono and states that its font service has a no-logging policy. It is still an external service that your client connects to.
+
+Use a local copy of the theme or QuickCSS, disable the online version of this theme, and replace the Google Fonts `@import` with this line at the top of your CSS:
+
+```css
+@import url('https://fonts.bunny.net/css?family=atkinson-hyperlegible-mono:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i|atkinson-hyperlegible-next:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i&display=swap');
+```
+
+Keep the three font variables unchanged. This requests normal and italic styles at each weight from 200 to 800. Bunny uses a different API format from Google's CSS2 endpoint; do not simply replace the hostname in the existing import.
+
+### Installed fonts without external font requests
+
+1. Download **Atkinson Hyperlegible Next** and **Atkinson Hyperlegible Mono** from the [Braille Institute](https://www.brailleinstitute.org/freefont/). Choose both families, including their normal and italic styles.
+2. Install the desktop fonts through your operating system, then fully quit and reopen Discord or your browser.
+3. Use a local copy of this theme or QuickCSS and remove its `@import` line. Keep the three font variables unchanged.
+4. Disable any online copy of this theme and remove duplicate font imports from QuickCSS. Otherwise those copies will still request fonts externally.
+
+The CSS family names match the installed fonts. If your client cannot access them, it uses the fallback fonts; browser privacy settings can restrict access to installed fonts. This removes this theme's external font requests, not Discord's other network traffic.
+
+### Other download sources
+
+Fontsource also provides desktop and webfont downloads for [Next](https://fontsource.org/fonts/atkinson-hyperlegible-next/use) and [Mono](https://fontsource.org/fonts/atkinson-hyperlegible-mono/use). Use desktop TTF/OTF files for system installation; WOFF/WOFF2 files are for web hosting. If you redistribute or self-host the fonts, retain their included SIL Open Font License.
+
 ## Font loading and troubleshooting
 
 - The theme requests the stylesheet from `fonts.googleapis.com` and font files from `fonts.gstatic.com`. If those hosts are blocked or unavailable, the fallback fonts are used.

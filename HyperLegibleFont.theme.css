@@ -1,8 +1,8 @@
 /**
  * @name Atkinson Hyperlegible Next
  * @author Ayoub Abedrabbo
- * @description Uses Atkinson Hyperlegible Next for Discord text and headings while preserving monospace code.
- * @version 0.0.2
+ * @description Uses Atkinson Hyperlegible Next for Discord text and headings and Atkinson Hyperlegible Mono for code.
+ * @version 0.0.3
  * @authorLink https://betterdiscord.app/developer/ayoubab1
  * @donate https://ko-fi.com/ayoubab1
  * @patreon http://patreon.com/AyoubAbedrabbo
@@ -10,9 +10,10 @@
  * @source https://github.com/Today20092/DiscordAtkinsonHyperlegible
  */
 
-@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&display=swap');
 
 :root {
   --font-primary: "Atkinson Hyperlegible Next", "gg sans", "Noto Sans", sans-serif;
   --font-display: "Atkinson Hyperlegible Next", "gg sans", "Noto Sans", sans-serif;
+  --font-code: "Atkinson Hyperlegible Mono", "gg mono", "Source Code Pro", Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
 }
